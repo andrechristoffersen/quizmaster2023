@@ -4,29 +4,31 @@ html{
 }
 
 body{
-    background: lightblue; /* Bakgrunnsfarge */
+    background: rgb(235, 242, 245); /* Bakgrunnsfarge */
     color: black; /* Skriftfarge */
     font-family: Verdana, Geneva, Tahoma, sans-serif; /* Skriftfamilie /m fallback */
     font-size: 0.9em; /* Relativ skriftstrl. */
     text-align: center;
-    margin: 5%; /* Relativ marg */
-    width: 90%;
-    height: 80%;
+    margin: 2.5%; /* Relativ marg */
+    width: 95%;
+    height: 95%;
     border: 1px solid;
     border-color: blue;
     vertical-align: middle;
     position: relative;
 }
 
-div{
-    height: 70%;
-    width: 50%;
-    margin: 2.5% 25% 2.5% 25%;
+#content{
+    height: 80%;
+    width: 60%;
+    margin: 2% 20% 3% 20%;
     border: 1px solid;
 }
 
 #app_name{
     font-size: 4em; /* Relativ skriftstrl. */
+    color: rgb(208, 225, 240);
+    text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; /* Linjer rundt tekst */
     margin: 0%; /* Relativ marg */
     border: 1px solid;
 }
@@ -36,9 +38,31 @@ div{
     border: 1px solid;
 }
 
+#login{
+    background: rgba(209, 209, 209, 0.7); /* Green background with 30% opacity */
+    border-radius: 25px;
+    height: 30%;
+    width: 25%;
+    margin: auto;
+    border: 2px dashed;
+    border-color:rgb(0, 0, 0);
+    text-transform: capitalize;
+    min-height: 180px;
+    min-width: 200px;
+    top: 20%;
+}
+
+.text_for_input{
+    text-align: left;
+}
+
+button{
+    margin: 1%;
+}
+
 footer{
     position: absolute;
-    bottom: 0%;
+    bottom: 1%;
     left: 50%;
     transform: translate(-50%, -50%);
 }

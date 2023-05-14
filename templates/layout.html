@@ -4,13 +4,26 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="static/style.css">
         <title>
-            Test
+            {% block title %}
+            {% endblock %}
         </title>
     </head>
     <body>
         <h1 id="app_name">QuizMaster</h1>
         <h2 id="app_year">2023</h2>
-        <div></div>
+        <div id="content">
+            {% block content %}
+            <div id="login">
+                <h3>Innlogging</h3>
+                <span class="text_for_input">Brukernavn:</span><br>
+                <input type="text"><br>
+                <span class="text_for_input">Passord:</span><br>
+                <input type="password"><br>
+                <button type="submit">Logg Inn</button>
+                <button type="submit">Registrer</button>
+            </div>
+            {% endblock %}
+        </div>
         <footer>
             <span>av André Christoffersen</span>
         </footer>
