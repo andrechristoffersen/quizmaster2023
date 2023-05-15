@@ -1,21 +1,24 @@
-html{
-    height: 100%;
-    width: 100%;
+/* RESETTER ATTRIBUTTER FOR ALLE ELEMENTER */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
 }
 
-body{
+body {
     background: rgb(235, 242, 245); /* Bakgrunnsfarge */
     color: black; /* Skriftfarge */
     font-family: Verdana, Geneva, Tahoma, sans-serif; /* Skriftfamilie /m fallback */
     font-size: 0.9em; /* Relativ skriftstrl. */
-    text-align: center;
-    margin: 2.5%; /* Relativ marg */
-    width: 95%;
-    height: 95%;
-    border: 1px solid;
-    border-color: blue;
-    vertical-align: middle;
-    position: relative;
+}
+
+#logo {
+    margin: 1em auto 0 auto;
+    width: 25%;
+    min-width: 400px;
+    /* border: 1px solid; */
+    left: 50%;
 }
 
 #content{
@@ -29,19 +32,16 @@ body{
     font-size: 4em; /* Relativ skriftstrl. */
     color: rgb(208, 225, 240);
     text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black; /* Linjer rundt tekst */
-    margin: 0%; /* Relativ marg */
     border: 1px solid;
 }
 
 #app_year{
-    margin: 0%; /* Relativ marg */
     border: 1px solid;
 }
 
 #login{
     background: rgba(209, 209, 209, 0.7); /* Green background with 30% opacity */
     border-radius: 25px;
-    height: 30%;
     width: 25%;
     margin: auto;
     border: 2px dashed;
